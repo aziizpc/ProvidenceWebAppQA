@@ -25,6 +25,7 @@ namespace ProvidenceWebAppQA.util
                 return instance;
             }
         }
+
         private TestDataManager()
         {
             IConfiguration config = getTestData();

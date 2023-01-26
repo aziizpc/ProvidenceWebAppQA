@@ -524,7 +524,7 @@
           "build/Selenium.WebDriver.GeckoDriver.targets": {}
         }
       },
-      "Selenium.WebDriver.MSEdgeDriver/104.0.1293.54": {
+      "Selenium.WebDriver.MSEdgeDriver/109.0.1518.44-pre": {
         "type": "package",
         "build": {
           "build/Selenium.WebDriver.MSEdgeDriver.targets": {}
@@ -2147,21 +2147,21 @@
         "selenium.webdriver.geckodriver.nuspec"
       ]
     },
-    "Selenium.WebDriver.MSEdgeDriver/104.0.1293.54": {
-      "sha512": "kOc+LLvP0hGJmwR8aP2BI/B7Q5rtKkWMaLEA+4u1NeUhPtBjXVmdSezmmAZg36MdCKMGXTwQzPFeg+eN8dpdBg==",
+    "Selenium.WebDriver.MSEdgeDriver/109.0.1518.44-pre": {
+      "sha512": "XpmKfvOiGYZjtIUxmgArOAVkcMYfKKqAh8LZukactkvATnl4jX5paMIG1yuoHUBJxbd8qqh1GNR9sAaCsHqcJA==",
       "type": "package",
-      "path": "selenium.webdriver.msedgedriver/104.0.1293.54",
+      "path": "selenium.webdriver.msedgedriver/109.0.1518.44-pre",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "LICENSE",
         "build/DefinePropertiesMSEdgeDriver.targets",
         "build/Selenium.WebDriver.MSEdgeDriver.targets",
         "driver/linux64/msedgedriver",
         "driver/mac64/msedgedriver",
         "driver/win32/msedgedriver.exe",
         "driver/win64/msedgedriver.exe",
-        "license/license.txt",
-        "selenium.webdriver.msedgedriver.104.0.1293.54.nupkg.sha512",
+        "selenium.webdriver.msedgedriver.109.0.1518.44-pre.nupkg.sha512",
         "selenium.webdriver.msedgedriver.nuspec"
       ]
     },
@@ -3818,7 +3818,7 @@
       "Selenium.WebDriver >= 4.3.0",
       "Selenium.WebDriver.ChromeDriver >= 109.0.5414.74",
       "Selenium.WebDriver.GeckoDriver >= 0.31.0.1",
-      "Selenium.WebDriver.MSEdgeDriver >= 104.0.1293.54",
+      "Selenium.WebDriver.MSEdgeDriver >= 109.0.1518.44-pre",
       "SeleniumExtras.WaitHelpers >= 1.0.2",
       "System.Configuration.ConfigurationManager >= 6.0.0",
       "System.Xml.Linq >= 3.5.21022.801",
@@ -3911,7 +3911,7 @@
           },
           "Selenium.WebDriver.MSEdgeDriver": {
             "target": "Package",
-            "version": "[104.0.1293.54, )"
+            "version": "[109.0.1518.44-pre, )"
           },
           "SeleniumExtras.WaitHelpers": {
             "target": "Package",

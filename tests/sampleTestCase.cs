@@ -45,15 +45,15 @@ namespace ProvidenceWebAppQA.tests
         }
 
         [Test]
-        public void testGoToFeaturePage()
+        public void testUserLogin()
         {
             homePage.openHome(testData.AppURL);
             TestContext.WriteLine("App is launched successfully");
             homePage.clickMyAccount();
             TestContext.WriteLine("Clicked on My Account");
-            myAccountPage.enterUsername("hello");
+            myAccountPage.enterUsername("aziizpc@gmail.com");
             TestContext.WriteLine("Entered the username");
-            myAccountPage.enterPassword("world");
+            myAccountPage.enterPassword("Password@123");
             TestContext.WriteLine("Entered the password");
             myAccountPage.clicksignIn();
             TestContext.WriteLine("Clicked Sign In");
