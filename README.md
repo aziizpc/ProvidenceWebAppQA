@@ -13,17 +13,17 @@ appsettings.json contains data e.g. URL and browser config.
 Clone this project and run to build the project. 
 
 ```
-dotnet build SeleniumFramework.csproj 
+dotnet build ProvidenceWebAppQA.csproj 
 ```
 
 To run the tests;
 ```
-dotnet test SeleniumFramework.csproj -e gridUrl=http://<ipaddress>:4444 -e browserName=chrome
+dotnet test ProvidenceWebAppQA.csproj -e gridUrl=http://<ipaddress>:4444 -e browserName=chrome
 ```
 
 If selenium grid is not setup then skip the gridUrl parameter and the framework will launch driver using local browser instance.
 ```
-dotnet test SeleniumFramework.csproj -e browserName=chrome
+dotnet test ProvidenceWebAppQA.csproj -e browserName=chrome
 ```
 
 For setting up selenium grid using docker run; 

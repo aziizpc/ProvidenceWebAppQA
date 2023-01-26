@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace SeleniumFramework.util
+namespace ProvidenceWebAppQA.util
 {
     public sealed class TestDataManager 
     {

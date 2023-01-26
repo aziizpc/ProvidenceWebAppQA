@@ -5,7 +5,7 @@ using OpenQA.Selenium.Support.Extensions;
 using System.Diagnostics;
 using NUnit.Framework;
 
-namespace SeleniumFramework.util
+namespace ProvidenceWebAppQA.util
 {
     class Util
     {
@@ -78,5 +78,44 @@ namespace SeleniumFramework.util
             }
             return returnValue;
         }
+
+        public void enterText(By by, string text)
+        {
+            try
+            {
+                // Try to find the element using the provided locator
+                IWebElement element = driver.FindElement(by);
+                // Try using the SendKeys method to enter text
+                element.SendKeys(text);
+            }
+            catch (Exception e)
+            {
+                try
+                {
+                    // Try to find the element using the provided locator
+                    IWebElement element = driver.FindElement(by);
+                    // If the text is not entered using the SendKeys method, try using the Clear and SendKeys method
+                    element.Clear();
+                    element.SendKeys(text);
+                }
+                catch (Exception ex)
+                {
+                    try
+                    {
+                        // Try to find the element using the provided locator
+                        IWebElement element = driver.FindElement(by);
+                        // If the above methods fail, try using the JavaScriptExecutor to enter text
+                        IJavaScriptExecutor javascriptExecutor = (IJavaScriptExecutor)driver;
+                        javascriptExecutor.ExecuteScript("arguments[0].value='" + text + "';", element);
+                    }
+                    catch (Exception exx)
+                    {
+                        // If none of the above methods work, throw an exception
+                        throw new Exception("Unable to enter text into the element using locator: " + by + ": " + exx.Message);
+                    }
+                }
+            }
+        }
+
     }
 }

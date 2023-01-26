@@ -12,7 +12,7 @@ using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Remote;
 
-namespace SeleniumFramework.util
+namespace ProvidenceWebAppQA.util
 {
     internal class DriverManager
     {
