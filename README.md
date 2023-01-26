@@ -1,5 +1,5 @@
 # Selenium Framework in C#
-This framework is created in Selenium and C#. It uses Page Object model design pattern. This project was originally writter for .net Framework and now it has been upgraded to .net core.
+This framework is created in Selenium and C#. It uses Page Object model design pattern. This project was originally written for .net Framework and now it has been upgraded to .net core.
 
 Folder structure :-
 1. pages  -> contains page objects and Web element descriptions.
